@@ -1,0 +1,8 @@
+.vagrant/
+output/*
+!output/.gitkeep
+pull-secret.json
+*.log
+*.iso
+.DS_Store
+Thumbs.db

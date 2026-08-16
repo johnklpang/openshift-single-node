@@ -1,0 +1,28 @@
+# Laptop test-lab defaults for a Windows 11 host with 32 GB RAM and VirtualBox.
+# Official single-node OKD minimum is 4 vCPU / 16 GB RAM / 120 GB disk.
+# Helper VM adds 2 GB. Leave ~12-14 GB for Windows 11.
+#
+# Override any value here, or with environment variables (see README).
+
+okd_version: "4.22.0-okd-scos.7"
+
+cluster_name: okd
+base_domain: lab
+
+network_cidr: "192.168.56.0/24"
+host_ip: "192.168.56.1"
+helper_ip: "192.168.56.10"
+sno_ip: "192.168.56.20"
+
+helper_box: "bento/rockylinux-9"
+
+helper_cpus: 2
+helper_memory_mb: 2048
+
+sno_cpus: 4
+sno_memory_mb: 16384
+sno_disk_gb: 120
+
+# VirtualBox VM names (shown in the VirtualBox Manager GUI)
+helper_vm_name: okd-helper
+sno_vm_name: okd-sno
