@@ -1,0 +1,15 @@
+# Generated lab artifacts
+output/*
+!output/.gitkeep
+
+# Local overrides and secrets
+config.local.env
+pull-secret.json
+*.iso
+*.vdi
+*.vmdk
+*.log
+
+# Installer / client archives
+*.tar.gz
+.DS_Store
